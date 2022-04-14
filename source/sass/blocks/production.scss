@@ -1,0 +1,52 @@
+.production {
+  border: 1px solid #ececec;
+  padding: 21.5px 0 33px;
+  margin-bottom: 26px;
+}
+
+.production__subtitle {
+  position: relative;
+  padding-left: 91px;
+  margin-bottom: 24.5px;
+  line-height: 1.41;
+
+  &::after {
+    position: absolute;
+    top: 12px;
+    left: 33px;
+    content: url("../../img/video.svg");
+  }
+}
+
+.production__video-description {
+  font-size: 13px;
+  line-height: 1.85;
+  padding-left: 34px;
+  margin: 0;
+  margin-bottom: 41px;
+}
+
+.production__video-container {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.production__video {
+  object-fit: contain;
+}
+
+.production__playpause {
+  position: absolute;
+  width: 101px;
+  height: 77px;
+  top: 24%;
+  left: 31%;
+  background: url("../../img/play.svg") center no-repeat;
+  cursor: pointer;
+}
+
+.production__order-button {
+  width: 192px;
+  margin: 0 34px;
+  padding-top: 14px;
+}

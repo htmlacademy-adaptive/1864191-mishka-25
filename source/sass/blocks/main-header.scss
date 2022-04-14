@@ -1,0 +1,28 @@
+.main-header {
+  position: relative;
+  min-height: 79px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.main-header__logo {
+  margin-right: 67px;
+  padding-top: 5px;
+}
+
+.main-header__toggle {
+  display: inline-block;
+  margin: 0;
+  margin-right: 31px;
+  padding: 0;
+  width: 20px;
+  height: 14px;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.main-header__toggle:active .main-nav {
+  display: block;
+}

@@ -1,0 +1,16 @@
+.features {
+  display: grid;
+  grid-template-columns: 97px 1fr;
+  grid-template-rows: 40px 40px 40px;
+  grid-auto-flow: row;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  font-size: 15px;
+  line-height: 1.33;
+  color: #444444;
+}
+
+.features__description {
+  margin: 0;
+}
