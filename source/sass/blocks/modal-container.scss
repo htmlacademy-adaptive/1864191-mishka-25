@@ -1,0 +1,13 @@
+.modal-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: rgba(242, 242, 242, 0.9);
+}
+
+// Uncomment below to disable modal
+
+.modal-container--closed {
+  display: none;
+}

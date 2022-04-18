@@ -1,0 +1,16 @@
+.social {
+  width: 142px;
+  height: 27px;
+  padding: 29px 0 23px;
+}
+
+.social__list {
+  display: flex;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 33px;
+}

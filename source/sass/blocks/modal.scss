@@ -1,0 +1,16 @@
+.modal {
+  width: 320px;
+  background-color: $color-white;
+  margin: auto;
+  padding: 28.5px 28px 46px;
+  box-sizing: border-box;
+  font-family: "Open sans", sans-serif;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+}
+
+.modal__title {
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}

@@ -1,0 +1,9 @@
+.page-body {
+  width: 320px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: $color-white;
+  margin: 0 auto;
+  font-family: "Open sans", sans-serif;
+}

@@ -1,0 +1,29 @@
+.contacts__title {
+  padding: 0 30px;
+  margin-bottom: 28px;
+}
+
+.contacts__adress {
+  display: grid;
+  grid-template-columns: 76px 1fr;
+  grid-template-rows: 26px 1fr;
+  row-gap: 34px;
+  padding: 0 30px;
+  margin-bottom: 62px;
+  font-size: 14px;
+  line-height: 2.14;
+  font-style: normal;
+  color: $color-text-light;
+  justify-items: start;
+}
+
+.contacts__email-content {
+  color: $color-text-light;
+  border-bottom: 1px solid #62d1ba;
+  text-decoration: none;
+}
+
+.contacts__write {
+  margin: 37px 30px 39px 30px;
+  padding-top: 15px;
+}

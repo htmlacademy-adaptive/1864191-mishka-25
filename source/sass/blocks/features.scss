@@ -1,0 +1,13 @@
+.features {
+  display: grid;
+  grid-template-columns: 97px 1fr;
+  grid-template-rows: 40px 40px 40px;
+  grid-auto-flow: row;
+  font-size: 15px;
+  line-height: 1.33;
+  color: $color-text-light;
+}
+
+.features__description {
+  margin: 0;
+}

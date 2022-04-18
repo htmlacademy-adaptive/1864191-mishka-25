@@ -1,0 +1,56 @@
+.intro {
+  min-height: 490px;
+  background-color: $color-bg-grey;
+  background-image: url("../../img/intro-mobile.jpg");
+  background-position: 100% -14%;
+  background-repeat: no-repeat;
+}
+
+.intro__title {
+  margin: 0;
+  padding: 73px 30px 120px;
+  font-size: 27px;
+  text-align: center;
+  line-height: 1.11;
+}
+
+.intro__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.intro__item {
+  width: 320px;
+  height: 103px;
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  &--primary {
+    background-color: $color-green-light;
+    background-image: url("../../img/interior-icon.svg");
+    background-position: 87% 55%;
+    background-repeat: no-repeat;
+  }
+
+  &--secondary {
+    background-color: #56c3b2;
+    background-image: url("/../../img/toy-icon.svg");
+    background-position: 90% 50%;
+    background-repeat: no-repeat;
+  }
+}
+
+.intro__link {
+  display: block;
+  text-decoration: none;
+  color: $color-white;
+  padding: 24px 160px 31px 30px;
+  box-sizing: border-box;
+  font-size: 19px;
+  line-height: 1.26;
+  font-weight: 700;
+}

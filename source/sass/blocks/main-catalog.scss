@@ -1,0 +1,22 @@
+.main-catalog__title {
+  min-height: 177px;
+  background-color: $color-bg-grey;
+  text-align: center;
+  padding-top: 74px;
+  box-sizing: border-box;
+  font-size: 27px;
+  line-height: 1.11;
+  font-weight: 700;
+}
+
+.main-catalog__wrapper {
+  padding: 30px 30px;
+  margin-bottom: 26px;
+}
+
+.main-catalog__list {
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+}
