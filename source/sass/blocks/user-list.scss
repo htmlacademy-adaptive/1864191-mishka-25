@@ -1,0 +1,28 @@
+.user-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.user-list__item {
+  min-width: 320px;
+  min-height: 79px;
+  background-color: $color-white;
+  box-shadow: 0 1px 0 $color-border, inset 0 1px 0 $color-border;
+  box-sizing: border-box;
+  padding-left: 30px;
+}
+
+.user-list__link {
+  display: block;
+  text-decoration: none;
+  color: $color-text;
+  font-size: 17px;
+  line-height: 1.41;
+  font-weight: 700;
+  padding-top: 29px;
+}
+
+.user-list__icon {
+  margin-right: 22px;
+}

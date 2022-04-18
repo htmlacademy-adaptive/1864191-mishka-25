@@ -18,11 +18,7 @@
   padding: 0;
   width: 20px;
   height: 14px;
-  background-color: #ffffff;
+  background-color: $color-white;
   border: none;
   cursor: pointer;
-}
-
-.main-header__toggle:active .main-nav {
-  display: block;
 }

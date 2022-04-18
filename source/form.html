@@ -5,9 +5,11 @@
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.png">
 </head>
 
-<body class="page__body">
+<body class="page-body">
   <header class="main-header">
     <a class="main-header__logo logo" href="index.html">
       <img class="main-header__logo-image" src="./img/mishka-logo-mobile.svg" width="86" height="35"
@@ -68,14 +70,16 @@
           <ul class="filter__list filter__list--radio">
             <li class="filter__item filter__item--type">
               <label class="filter__label filter__label--radio">
-                <input class="filter__input filter__input--radio visually-hidden" type="radio" name="product-type" value="accessory" checked>
+                <input class="filter__input filter__input--radio visually-hidden" type="radio" name="product-type"
+                  value="accessory" checked>
                 <span class="filter__mark filter__mark--radio"></span>
                 Аксессуар для интерьера
               </label>
             </li>
             <li class="filter__item filter__item--type">
               <label class="filter__label filter__label--radio">
-                <input class="filter__input filter__input--radio visually-hidden" type="radio" name="product-type" value="toys">
+                <input class="filter__input filter__input--radio visually-hidden" type="radio" name="product-type"
+                  value="toys">
                 <span class="filter__mark filter__mark--radio"></span>
                 Детская игрушка
               </label>
@@ -136,17 +140,20 @@
           <ul class="filter__list">
             <li class="filter__item filter__item--name">
               <label class="filter__label filter__label--name">Имя:
-                <input class="filter__input filter__input-name" type="text" name="name" placeholder="Введите ваше имя*" required>
+                <input class="filter__input filter__input-name" type="text" name="name" placeholder="Введите ваше имя*"
+                  required>
               </label>
             </li>
             <li class="filter__item filter__item--name">
               <label class="filter__label filter__label--name">Фамилия:
-                <input class="filter__input filter__input-name" type="text" name="surname" placeholder="Укажите фамилию*" required>
+                <input class="filter__input filter__input-name" type="text" name="surname"
+                  placeholder="Укажите фамилию*" required>
               </label>
             </li>
             <li class="filter__item filter__item--name">
               <label class="filter__label filter__label--name">Отчество:
-                <input class="filter__input filter__input-name" type="text" name="patronymic" placeholder="Отчество, если желаете">
+                <input class="filter__input filter__input-name" type="text" name="patronymic"
+                  placeholder="Отчество, если желаете">
               </label>
             </li>
           </ul>
@@ -154,7 +161,8 @@
 
         <fieldset class="filter__group filter__group--phone">
           <legend class="filter__legend filter__legend--phone subtitle--green">Тел</legend>
-          <input class="filter__input filter__input-phone" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+          <input class="filter__input filter__input-phone" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
+            required>
         </fieldset>
         <fieldset class="filter__group filter__group--email">
           <legend class="filter__legend filter__legend--email subtitle--green">E-mail</legend>
@@ -173,8 +181,8 @@
     </section>
   </main>
 
-  <footer class="main-footer">
-    <div class="main-footer__social social">
+  <footer class="footer">
+    <div class="footer__social social">
       <ul class="social__list">
         <li class="social__item">
           <a href="https://vk.com/htmlacademy" class="social__link">
@@ -212,7 +220,7 @@
       </ul>
     </div>
 
-    <div class="main-footer__copyright copyright">
+    <div class="footer__copyright copyright">
       <b class="copyright__text">Разработано</b>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <svg class="copyright__icon" width="27" height="35" viewBox="0 0 27 35" fill="none"

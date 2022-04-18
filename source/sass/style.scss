@@ -3,9 +3,12 @@
 @import "./global/fonts.scss";
 @import "./global/text-styles.scss";
 @import "./global/button.scss";
-@import "./blocks/body.scss";
+@import "./global/colors.scss";
+@import "./blocks/page-body.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/main-nav.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/user-list.scss";
 @import "./blocks/intro.scss";
 @import "./blocks/product.scss";
 @import "./blocks/features.scss";
@@ -13,10 +16,13 @@
 @import "./blocks/reviews.scss";
 @import "./blocks/contacts.scss";
 @import "./blocks/footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/copyright.scss";
 @import "./blocks/main-form.scss";
 @import "./blocks/filter.scss";
 @import "./blocks/main-catalog";
 @import "./blocks/catalog.scss";
 @import "./blocks/production";
+@import "./blocks/modal-container.scss";
 @import "./blocks/modal.scss";
 @import "./blocks/modal-form.scss";

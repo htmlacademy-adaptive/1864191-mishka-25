@@ -8,7 +8,7 @@
   font-size: 15px;
   line-height: 2;
   text-align: center;
-  color: #444444;
+  color: $color-text-light;
   margin-bottom: 23px;
 }
 
@@ -29,7 +29,7 @@
   justify-content: center;
 
   &--active {
-    border-color: #63d1bb;
+    border-color: $color-green-light;
   }
 }
 
@@ -42,13 +42,13 @@
   line-height: 0.94;
   font-weight: 700;
   text-transform: uppercase;
-  color: #444444;
+  color: $color-text-light;
 }
 
 .modal-form__button {
-  background: #63d1bb;
+  background: $color-green-light;
   border: none;
   font-size: 17px;
   line-height: 0.94;
-  color: #ffffff;
+  color: $color-white;
 }

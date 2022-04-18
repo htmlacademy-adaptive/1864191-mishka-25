@@ -18,7 +18,7 @@
   padding: 0;
   font-size: 15px;
   line-height: 2;
-  color: #444444;
+  color: $color-text-light;
 }
 
 .reviews__autor {
@@ -48,7 +48,7 @@
   width: 130px;
   height: 52px;
   background-color: transparent;
-  border: 1px solid #ececec;
+  border: 1px solid $color-border;
   cursor: pointer;
   padding-right: 4px;
 }

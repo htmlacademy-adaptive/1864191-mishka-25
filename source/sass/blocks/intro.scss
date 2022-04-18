@@ -1,6 +1,6 @@
 .intro {
   min-height: 490px;
-  background-color: #f1f1f1;
+  background-color: $color-bg-grey;
   background-image: url("../../img/intro-mobile.jpg");
   background-position: 100% -14%;
   background-repeat: no-repeat;
@@ -30,7 +30,7 @@
   padding: 0;
 
   &--primary {
-    background-color: #63d1bb;
+    background-color: $color-green-light;
     background-image: url("../../img/interior-icon.svg");
     background-position: 87% 55%;
     background-repeat: no-repeat;
@@ -47,7 +47,7 @@
 .intro__link {
   display: block;
   text-decoration: none;
-  color: #ffffff;
+  color: $color-white;
   padding: 24px 160px 31px 30px;
   box-sizing: border-box;
   font-size: 19px;
