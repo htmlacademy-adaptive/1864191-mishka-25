@@ -1,6 +1,10 @@
 .modal-form__group {
   border: none;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 10px;
+  }
 }
 
 .modal-form__title {
@@ -10,6 +14,11 @@
   text-align: center;
   color: $color-text-light;
   margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 1.76;
+  }
 }
 
 .modal-form__list {
@@ -31,6 +40,11 @@
   &--active {
     border-color: $color-green-light;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 112px;
+    height: 52px;
+  }
 }
 
 .modal-form__item:not(:last-child) {
@@ -51,4 +65,8 @@
   font-size: 17px;
   line-height: 0.94;
   color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }

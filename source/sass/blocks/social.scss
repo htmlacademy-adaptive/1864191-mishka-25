@@ -1,7 +1,10 @@
 .social {
   width: 142px;
   height: 27px;
-  padding: 29px 0 23px;
+
+  @media (max-width: $mobile-width-only) {
+    padding: 29px 0 23px;
+  }
 }
 
 .social__list {
