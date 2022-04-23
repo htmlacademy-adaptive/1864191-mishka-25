@@ -1,0 +1,19 @@
+.assortement-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 18px 345px 18px 50px;
+  display: flex;
+  flex-direction: row;
+  background-color: $color-bg-header;
+  border-top: 1px solid $color-nav-border;
+}
+
+.assortement-list__link {
+  display: block;
+  margin-right: 63px;
+  text-decoration: none;
+  color: $color-text;
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 700;
+}
