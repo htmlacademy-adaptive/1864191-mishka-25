@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" href="favicon.ico">
@@ -12,8 +13,11 @@
 <body class="page-body">
   <header class="main-header">
     <a class="main-header__logo logo" href="index.html">
-      <img class="main-header__logo-image" src="./img/mishka-logo-mobile.svg" width="86" height="35"
-        alt="Логотип магазина Мишка.">
+      <picture>
+        <source media="(min-width: 1150px)" srcset="./img/mishka-logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="./img/mishka-logo-tablet.svg">
+        <img class="main-header__logo-image" src="./img/mishka-logo-mobile.svg" alt="Логотип магазина Мишка.">
+      </picture>
     </a>
     <button class="main-header__toggle" type="button">
       <svg class="main-header__toggle-icon" width="20" height="14" viewBox="0 0 20 14" fill="none"
@@ -22,40 +26,52 @@
       </svg>
       <span class="visually-hidden">Открыть меню.</span>
     </button>
-    <nav class="main-nav main-nav--visible main-nav--hidden">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Вязание на заказ</a>
-          </li>
-        </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item">
-            <a class="user-list__link" href="#">
-              <svg class="user-list__icon" width="18" height="18" viewBox="0 0 18 18" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path opacity=".2"
-                  d="m17.693 16.057-3.477-3.477c1.023-1.33 1.534-2.966 1.534-4.705C15.75 3.477 12.273 0 7.875 0S0 3.477 0 7.875s3.477 7.875 7.875 7.875c1.739 0 3.375-.614 4.704-1.534l3.478 3.477c.204.205.409.307.818.307.614 0 1.125-.511 1.125-1.125 0-.204-.102-.511-.307-.818ZM2.25 7.875c0-3.068 2.557-5.625 5.625-5.625S13.5 4.807 13.5 7.875 10.943 13.5 7.875 13.5 2.25 10.943 2.25 7.875Z"
-                  fill="#000" />
-              </svg>
-              Поиск по сайту</a>
-          </li>
-          <li class="user-list__item">
-            <a class="user-list__link" href="#">
-              <svg class="user-list__icon" width="21" height="18" viewBox="0 0 21 18" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path opacity=".2"
-                  d="M20.188 6.857h-3.55L13.188.381C12.985 0 12.58-.095 12.174.095s-.507.572-.304.953l3.145 5.81H5.783l3.145-5.81c.202-.381 0-.762-.305-.953-.406-.19-.811 0-1.014.286l-3.45 6.476H.812c-.406 0-.812.286-.812.762 0 .381.304.762.812.762h.202l.914 2.857c-.203.095-.305.286-.305.572 0 .38.305.666.71.666L4.058 18h12.884l1.725-5.524c.405 0 .71-.286.71-.667 0-.19-.102-.476-.304-.57l.912-2.858h.203c.406 0 .812-.286.812-.762 0-.476-.406-.762-.812-.762Zm-4.565 9.62H5.073L3.854 12.38h13.087l-1.319 4.095Zm1.623-5.525H3.348l-.812-2.666h15.522l-.812 2.666Z"
-                  fill="#000" />
-              </svg>
-              Корзина: <span class="cart-status">пока пуста</span></a>
-          </li>
-        </ul>
-      </div>
+    <nav class="main-nav main-nav--primary main-nav--visible main-nav--hidden">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Вязание на заказ</a>
+        </li>
+      </ul>
     </nav>
+    <nav class="main-nav main-nav--secondary main-nav--visible main-nav--hidden">
+      <ul class="main-nav__list user-list">
+        <li class="user-list__item">
+          <a class="user-list__link" href="#">
+            <svg class="user-list__icon" width="18" height="18" viewBox="0 0 18 18" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path opacity=".2"
+                d="m17.693 16.057-3.477-3.477c1.023-1.33 1.534-2.966 1.534-4.705C15.75 3.477 12.273 0 7.875 0S0 3.477 0 7.875s3.477 7.875 7.875 7.875c1.739 0 3.375-.614 4.704-1.534l3.478 3.477c.204.205.409.307.818.307.614 0 1.125-.511 1.125-1.125 0-.204-.102-.511-.307-.818ZM2.25 7.875c0-3.068 2.557-5.625 5.625-5.625S13.5 4.807 13.5 7.875 10.943 13.5 7.875 13.5 2.25 10.943 2.25 7.875Z"
+                fill="#000" />
+            </svg>
+            <span class="user-list__text">Поиск по сайту</span></a>
+        </li>
+        <li class="user-list__item">
+          <a class="user-list__link" href="#">
+            <svg class="user-list__icon" width="21" height="18" viewBox="0 0 21 18" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path opacity=".2"
+                d="M20.188 6.857h-3.55L13.188.381C12.985 0 12.58-.095 12.174.095s-.507.572-.304.953l3.145 5.81H5.783l3.145-5.81c.202-.381 0-.762-.305-.953-.406-.19-.811 0-1.014.286l-3.45 6.476H.812c-.406 0-.812.286-.812.762 0 .381.304.762.812.762h.202l.914 2.857c-.203.095-.305.286-.305.572 0 .38.305.666.71.666L4.058 18h12.884l1.725-5.524c.405 0 .71-.286.71-.667 0-.19-.102-.476-.304-.57l.912-2.858h.203c.406 0 .812-.286.812-.762 0-.476-.406-.762-.812-.762Zm-4.565 9.62H5.073L3.854 12.38h13.087l-1.319 4.095Zm1.623-5.525H3.348l-.812-2.666h15.522l-.812 2.666Z"
+                fill="#000" />
+            </svg>
+            Корзина: <span class="cart-status">пока пуста</span></a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="main-nav main-nav--tertiary">
+      <ul class="main-nav__list assortement-list">
+        <li class="assortement-list__item">
+          <a class="assortement-list__link" href="#">Новые поступления</a>
+        </li>
+        <li class="assortement-list__item">
+          <a class="assortement-list__link" href="#">Распродажа</a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="main-header__text">Бесплатная доставка по России</p>
   </header>
 
   <main class="main-form">
@@ -66,7 +82,7 @@
 
       <form class="main-form__filter filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="filter__group filter__group--type">
-          <legend class="filter__legend filter__legend--type subtitle--green">Тип</legend>
+          <h3 class="filter__title filter__title--type subtitle--green">Тип</h3>
           <ul class="filter__list filter__list--radio">
             <li class="filter__item filter__item--type">
               <label class="filter__label filter__label--radio">
@@ -88,7 +104,7 @@
         </fieldset>
 
         <fieldset class="filter__group filter__group--color">
-          <legend class="filter__legend filter__legend--color subtitle--green">Цвет</legend>
+          <h3 class="filter__title filter__title--color subtitle--green">Цвет</h3>
           <ul class="filter__list filter__list--checkbox">
             <li class="filter__item filter__item--color">
               <label class="filter__label filter__label--checkbox">
@@ -136,8 +152,8 @@
         </fieldset>
 
         <fieldset class="filter__group filter__group--name">
-          <legend class="filter__legend filter__legend--name subtitle--green">ФИО</legend>
-          <ul class="filter__list">
+          <h3 class="filter__title filter__title--name subtitle--green">ФИО</h3>
+          <ul class="filter__list filter__list--name">
             <li class="filter__item filter__item--name">
               <label class="filter__label filter__label--name">Имя:
                 <input class="filter__input filter__input-name" type="text" name="name" placeholder="Введите ваше имя*"
@@ -160,28 +176,37 @@
         </fieldset>
 
         <fieldset class="filter__group filter__group--phone">
-          <legend class="filter__legend filter__legend--phone subtitle--green">Тел</legend>
+          <h3 class="filter__title filter__title--phone subtitle--green">Тел</h3>
           <input class="filter__input filter__input-phone" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
             required>
         </fieldset>
         <fieldset class="filter__group filter__group--email">
-          <legend class="filter__legend filter__legend--email subtitle--green">E-mail</legend>
+          <h3 class="filter__title filter__title--email subtitle--green">E-mail</h3>
           <input class="filter__input filter__input-email" type="email" name="email" placeholder="Ваш Email*" required>
         </fieldset>
 
-        <fieldset class="filter__group filter__group-comments">
-          <legend class="filter__legend filter__legend--comments subtitle--green">Доп</legend>
+        <fieldset class="filter__group filter__group--comments">
+          <h3 class="filter__title filter__title--comments subtitle--green">Доп</h3>
           <textarea class="filter__input filter__input--textarea" name="comment" wrap="soft"
             placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
+        <div class="filter__wrapper">
+          <p class="filter__notification">*Поля обязательны для заполнения</p>
+          <button class="filter__button button" type="submit">Отправить заказ</button>
+        </div>
 
-        <p class="filter__notification">*Поля обязательны для заполнения</p>
-        <button class="filter__button button" type="submit">Отправить заказ</button>
       </form>
     </section>
   </main>
 
   <footer class="footer">
+    <div class="footer__logo">
+      <svg width="102" height="35" viewBox="0 0 102 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M19.22 21.5c-.1-2.7-.5-5.3-.5-8 0-2.2.4-4.4-.4-6.5 0-.2.1-.5.1-.7.2-1-3.3-.5-3.8.5-.3.3-.5.6-.4 1 0 .1.1.2.1.3-.7 3.2-1.6 6.3-2.6 9.4-.4 1.2-.9 2.3-1.3 3.5-.6-1.1-1.2-2.2-1.6-3.4-1.4-3.4-2.6-6.9-4.3-10.2.2-1.5-3.2-1.4-3.9 0-.8 1.7-.7 3.4-.4 5.2.3 2 .4 4 .4 6.1 0 4 .4 7.9.4 11.9-.4.4-.5.9-.1 1.4.2.2.4.4.6.5 1 .7 3.6.1 3.6-1.3 0-4.1-.3-8.2-.4-12.4v-1.2c.1.1.1.3.2.4.6 1.6 1.3 3.2 2.2 4.7.9 1.5 1.3 3.1 1.8 4.7-.2.2-.3.5-.2.7 0 .2.1.3.3.4.6.5 1.8.3 2.5 0 .3-.1.6-.3.8-.4.3-.2.9-.7.7-1.2 0-.1-.1-.2-.1-.3.5-1.3.7-2.6 1-3.9.3-1.4.8-2.8 1.3-4.1.1.6.1 1.2.2 1.9.2 2.6 0 5.1 0 7.6 0 .8.1 1.6.2 2.5.1.3.4 1.8.3 1.9-.8.5-.6 1.1.2 1.3.9.2 2.1-.1 2.8-.7 1.2-1.1.6-2.8.4-4.2-.5-2.4 0-5-.1-7.4ZM27.62 22.2c-.1-2-.8-3.9-.8-5.9 0-2.3.2-4.6-.2-6.9-.1-.7-4.1.1-3.9 1 .3 2.1.2 4.2.2 6.4 0 2 .5 3.9.7 5.9.3 2.1-.1 4.2.1 6.2.1 1 .8 2.7.1 3.6-.4.5 1.5.3 1.6.3.8-.1 1.8-.4 2.3-1 .7-.8.2-2.4.1-3.4-.3-2-.1-4.2-.2-6.2ZM43.92 18.9c-2.1-2.8-5.9-.8-8.6-1.5-1.4-.4-1.4-2.3-1.4-3.4 0-1.4-.1-2.7-.3-4.1-.1-1.1 0-2.1.7-2.9.1-.1.9-.3.8-.3.4-.1.7-.1 1.1-.1 1.5-.1 4.6.2 4 2.5-.3 1 3.6.4 3.9-.6 1.2-4.6-7.3-3.7-9.7-3.1-2.2.6-4.6 1.8-4.8 4.4-.1 1.2.3 2.4.3 3.6.1 1.4-.2 2.8.3 4.1 1.1 3 5.5 1.6 7.8 1.7 3.8.3 2.7 5.5 2.7 7.9 0 1.3 1.2 3.4.2 4.5-.6.7-2 .7-2.8.8-.8.1-2.2.3-2.7-.5-1-1.4.1-3.8-.1-5.4-.1-.9-4.1-.1-3.9 1 .3 2.6-1.4 6.1 2.4 6.6 2.4.3 5.2-.2 7.5-.9 1.2-.4 2.3-.9 3.2-1.8 1-.9.7-2.3.4-3.5-.5-3.1.9-6.5-1-9ZM61.32 18.7c-.1-3.8-.7-7.5-.7-11.3 0-2-4-1.3-4 .3 0 3.6.5 7.2.7 10.8v.2c-1.9 0-3.9.2-5.9.2.2-4.6-.6-9.2-.4-13.9 0-.6-3.9-.1-3.9 1-.2 4.5.6 8.9.5 13.4-.1 2.1-.2 4.3-.3 6.4 0 1.1.2 2.2.3 3.3.1 1 .5 2.3.2 3.3-.2.8 3.6.3 3.9-.7.5-1.8-.2-4-.4-5.8-.2-1.7 0-3.5.1-5.2 2-.1 4.1-.3 6.1 0 .1 1.4.2 2.8.3 4.1.1 1.2.2 2.3.2 3.5 0 1 .1 2.5-.2 3.5-.8 2.1 3.1 1.9 3.7.4.7-1.9.5-4.2.4-6.2-.2-2.5-.6-4.9-.6-7.3ZM78.22 23.1c-.9-2.8-2.4-5.2-3.6-7.8 1-1.9 2-3.9 2.9-5.9.8-1.8 1.4-3.8 3.1-5.1.6-.4.6-.9-.3-1-.9-.1-2.1.2-2.8.7-1.4 1.3-2.4 2.7-3.1 4.4-.9 2.1-1.9 4.1-2.9 6.1-.1.1-.1.3-.2.4-.5.3-.8.8-.6 1.3-.8 1.6-1.6 3.1-2.5 4.6-.3-5.5-1-11.1-1.2-16.6 0-1.3-4-.5-3.9 1 .2 6.9 1.2 13.7 1.3 20.6v.1c-.3.3-.2.5.1.6 0 1.8-.1 3.5-.2 5.3-.5.7.5 1.1 1.1 1.1h.1c.7 0 2.6-.3 2.7-1.4.2-2.1.3-4.2.2-6.3 1.6-1.7 2.9-3.6 4.1-5.6.8 1.5 1.5 3 2 4.6.9 2.7 2.3 5.3 3.1 8 .5 1.8 4.5.7 3.9-1-1-2.8-2.4-5.3-3.3-8.1ZM101.72 18.5c-.2-.8-1.4-.8-2.3-.8v-1c-.1-2.7-.2-5.4-.4-8-.2-2.5-1.6-3.3-4-3.2-2.4.1-5.2.5-7.5 1.4-2.6 1-4.1 2.9-4.6 5.7-.5 3 .2 6.2.4 9.2.2 3.5.1 7 .1 10.5 0 .6 3.9 0 3.9-1V23c0-.8-.1-1.6-.1-2.4 1.4-.6 3.7 0 5.1.1 1.1.1 2.2-.2 3.2-.3 0 2.3.1 4.6.2 6.9 0 1.2.5 3.5-.4 4.5-.4.5 1.5.3 1.6.3.8-.1 1.8-.4 2.3-1 .9-1.1.5-3.8.4-5.1-.1-1.9-.1-3.8-.1-5.7 1.1-.2 2.4-.9 2.2-1.8Zm-14.6-.1c-.1-1.2-.2-2.5-.3-3.7-.2-2.3.1-5.6 2.3-7 .6-.4 1.7-.3 2.4-.4 1-.2 2-.4 2.8.2 1.2.8.9 3.7.9 4.9 0 2 .2 4 .3 6-.6.1-1.1.1-1.7.1-2.3-.2-4.6-.6-6.7-.1ZM24.22 6.7c.5-.1 1-.2 1.5-.5l.2-.2c.5-.3 1-.8.7-1.4-.5-1.1-.4-2.2-.4-3.4 0-1-1-1.2-1.8-1.2-.7.1-2.2.6-2.2 1.5 0 1-.1 2 .1 3 0 .1-.1.2-.1.4-.1.2 0 .4.1.6v.4c.1.2.2.4.4.5.6.3 1.1.3 1.5.3Z"
+          fill="#000" />
+      </svg>
+    </div>
     <div class="footer__social social">
       <ul class="social__list">
         <li class="social__item">

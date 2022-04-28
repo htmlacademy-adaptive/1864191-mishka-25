@@ -1,4 +1,5 @@
 .main-form__title {
+  position: relative;
   min-height: 177px;
   background-color: $color-bg-grey;
   text-align: center;
@@ -8,6 +9,38 @@
   line-height: 1.11;
   font-weight: 700;
   margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 169px;
+    font-size: 43px;
+    line-height: 1.16;
+    padding-top: 33px;
+    margin-bottom: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 212px;
+    font-size: 53px;
+    line-height: 1.08;
+    padding-top: 42px;
+    margin-bottom: 98px;
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      bottom: -9px;
+      left: 0;
+      content: url("../../img/zigzag-fill-tablet.svg");
+    }
+
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      content: url("../../img/zigzag-fill-desktop-form.svg");
+    }
+  }
 }
 
 .main-form__subtitle {
@@ -15,9 +48,25 @@
   line-height: 1.85;
   color: $color-text-light;
   padding: 0 30px;
-  margin-bottom: 27px;
+  margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 1.76;
+    padding: 0 50px;
+    margin-bottom: 81px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 225px;
+    margin-bottom: 79px;
+  }
 }
 
 .main-form__filter {
   padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
