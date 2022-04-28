@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: row;
     padding-left: 50px;
-    background-color: $color-bg-header;
+    background-color: $color-bg-grey;
     border-top: 1px solid $color-nav-border;
   }
 
@@ -25,6 +25,12 @@
     border: none;
     margin-right: 42px;
     padding-left: 20px;
+  }
+
+  &--theme-light {
+    @media (min-width: $tablet-width) and (max-width: 1149px) {
+      background-color: $color-bg-header;
+    }
   }
 }
 

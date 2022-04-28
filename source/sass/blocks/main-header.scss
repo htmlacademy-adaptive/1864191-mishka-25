@@ -66,16 +66,21 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 21px 27px 21px 96px;
+    padding: 21px 49px 21px 96px;
     font-size: 15px;
     line-height: 1.6;
     color: $color-text-light;
+    background-color: $color-bg-grey;
     display: block;
     order: 3;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 18px 49px 18px 94px;
+    padding: 18px 51px 18px 94px;
     order: 4;
+  }
+
+  &--theme-light {
+    background-color: $color-bg-header;
   }
 }

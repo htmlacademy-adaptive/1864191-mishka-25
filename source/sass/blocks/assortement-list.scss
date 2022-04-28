@@ -4,8 +4,14 @@
   padding: 18px 345px 18px 50px;
   display: flex;
   flex-direction: row;
-  background-color: $color-bg-header;
+  background-color: $color-bg-grey;
   border-top: 1px solid $color-nav-border;
+
+  &--theme-light {
+    @media (min-width: $desktop-width) {
+      background-color: $color-bg-header;
+    }
+  }
 }
 
 .assortement-list__link {

@@ -1,6 +1,17 @@
 .production {
+  display: flex;
+  flex-direction: column;
   border: 1px solid $color-border;
   padding: 21.5px 0 33px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-height: 455px;
+    flex-wrap: wrap;
+  }
 }
 
 .production__subtitle {
@@ -9,11 +20,35 @@
   margin-bottom: 24.5px;
   line-height: 1.41;
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.2;
+    padding-left: 105px;
+    margin-bottom: 23.5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+    padding-top: 97px;
+    padding-left: 78px;
+    margin-bottom: 25.5px;
+  }
+
   &::after {
     position: absolute;
     top: 12px;
     left: 33px;
     content: url("../../img/video.svg");
+
+    @media (min-width: $tablet-width) {
+      top: -3px;
+      left: 41px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 46px;
+      left: 78px;
+    }
   }
 }
 
@@ -23,15 +58,42 @@
   padding-left: 34px;
   margin: 0;
   margin-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+    line-height: 2;
+    padding: 0 39px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 253px;
+    padding: 0 0 0 78px;
+    margin-bottom: 52px;
+  }
 }
 
 .production__video-container {
   position: relative;
   margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+    margin-bottom: 36px;
+  }
 }
 
 .production__video {
   object-fit: contain;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    height: 455px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 683px;
+  }
 }
 
 .production__playpause {
@@ -42,10 +104,38 @@
   left: 31%;
   background: url("../../img/play.svg") center no-repeat;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) and (max-width: 1149px) {
+    width: 102px;
+    height: 78px;
+    top: 187px;
+    left: 282px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 188px;
+    left: 292px;
+  }
 }
 
 .production__order-button {
   width: 192px;
   margin: 0 34px;
   padding-top: 14px;
+
+  @media (min-width: $tablet-width) and (max-width: 1149px) {
+    width: 584px;
+    margin: 0 auto;
+    padding-top: 17px;
+    font-size: 17px;
+    line-height: 0.94;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 230px;
+    margin: 0 79px;
+    padding-top: 15px;
+    font-size: 17px;
+    line-height: 0.94;
+  }
 }

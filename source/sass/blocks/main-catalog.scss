@@ -1,4 +1,5 @@
 .main-catalog__title {
+  position: relative;
   min-height: 177px;
   background-color: $color-bg-grey;
   text-align: center;
@@ -7,16 +8,64 @@
   font-size: 27px;
   line-height: 1.11;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    min-height: 171px;
+    padding-top: 35px;
+    font-size: 43px;
+    line-height: 1.16;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 212px;
+    padding-top: 41px;
+    padding-left: 2px;
+    font-size: 53px;
+    line-height: 1.08;
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      bottom: -9px;
+      left: 0;
+      content: url("../../img/zigzag-fill-tablet.svg");
+    }
+
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      content: url("../../img/zigzag-fill-desktop-form.svg");
+    }
+  }
 }
 
 .main-catalog__wrapper {
   padding: 30px 30px;
   margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding: 67px 50px 63px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 110px 50px 57px;
+  }
 }
 
 .main-catalog__list {
   list-style-type: none;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 57px;
+  }
 }
