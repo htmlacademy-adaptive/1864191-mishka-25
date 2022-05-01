@@ -19,14 +19,10 @@
         <img class="main-header__logo-image" src="./img/mishka-logo-mobile.svg" alt="Логотип магазина Мишка.">
       </picture>
     </a>
-    <button class="main-header__toggle" type="button">
-      <svg class="main-header__toggle-icon" width="20" height="14" viewBox="0 0 20 14" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <path d="M20 0H0v2h20V0ZM20 6H0v2h20V6ZM20 12H0v2h20v-2Z" fill="#231F20" />
-      </svg>
-      <span class="visually-hidden">Открыть меню.</span>
-    </button>
-    <nav class="main-nav main-nav--primary main-nav--visible main-nav--hidden">
+    <nav class="main-nav main-nav--hidden main-nav--nojs">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню.</span>
+      </button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a class="site-list__link" href="catalog.html">Каталог товаров</a>
@@ -35,8 +31,6 @@
           <a class="site-list__link" href="#">Вязание на заказ</a>
         </li>
       </ul>
-    </nav>
-    <nav class="main-nav main-nav--secondary main-nav--visible main-nav--hidden">
       <ul class="main-nav__list user-list">
         <li class="user-list__item">
           <a class="user-list__link" href="#">
@@ -59,19 +53,18 @@
             Корзина: <span class="cart-status">пока пуста</span></a>
         </li>
       </ul>
+      <p class="main-nav__text">Бесплатная доставка по России</p>
+      <div class="main-nav main-nav--tertiary">
+        <ul class="main-nav__list assortement-list">
+          <li class="assortement-list__item">
+            <a class="assortement-list__link" href="#">Новые поступления</a>
+          </li>
+          <li class="assortement-list__item">
+            <a class="assortement-list__link" href="#">Распродажа</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-    <nav class="main-nav main-nav--tertiary">
-      <ul class="main-nav__list assortement-list">
-        <li class="assortement-list__item">
-          <a class="assortement-list__link" href="#">Новые поступления</a>
-        </li>
-        <li class="assortement-list__item">
-          <a class="assortement-list__link" href="#">Распродажа</a>
-        </li>
-      </ul>
-    </nav>
-
-    <p class="main-header__text">Бесплатная доставка по России</p>
   </header>
 
   <main class="main-form">
@@ -259,6 +252,7 @@
     </div>
   </footer>
 
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

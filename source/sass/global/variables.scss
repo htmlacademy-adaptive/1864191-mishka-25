@@ -6,7 +6,7 @@ $color-white: #ffffff;
 $color-bg-grey: #f1f1f1;
 $color-border: #ececec;
 $color-bg-header: #fafafa;
-$color-nav-border: rgba(0, 0, 0, 0.1);
+$color-nav-border: fade-out($color-text, 0.9);
 $color-email-underline: #62d1ba;
 
 $tablet-width: 768px;

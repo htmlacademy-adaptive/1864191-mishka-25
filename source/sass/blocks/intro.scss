@@ -7,30 +7,32 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    min-height: 731px;
+    min-height: 680px;
+    margin-bottom: 51px;
     background-image: url("../../img/intro-tablet.jpg");
-    background-position: 50% 452%;
+    background-position: 30% 102%;
     background-repeat: no-repeat;
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
-    min-height: 705px;
+    min-height: 702px;
     background-image: url("../../img/intro-desktop.jpg");
-    background-position: 50% 150%;
+    background-position: 50% 141%;
     background-repeat: no-repeat;
+    margin-bottom: 54px;
   }
 
   &::after {
     @media (min-width: $tablet-width) {
       position: absolute;
-      bottom: 36px;
+      bottom: -15px;
       content: url("../../img/zigzag-fill-tablet.svg");
     }
 
     @media (min-width: $desktop-width) {
       position: absolute;
-      bottom: -2px;
+      bottom: -4px;
       content: url("../../img/zigzag-fill-desktop.svg");
     }
   }

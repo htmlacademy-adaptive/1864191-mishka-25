@@ -257,14 +257,15 @@
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 0;
-    padding-left: 71px;
-    margin-bottom: 66px;
+    padding-left: 73px;
+    padding-top: 10px;
+    margin-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: flex-start;
     padding-left: 0;
-    margin-bottom: 62px;
+    margin-bottom: 67px;
   }
 }
 
@@ -290,13 +291,13 @@
 
     @media (min-width: $tablet-width) {
       width: 200px;
-      padding: 61px 0 0 54px;
+      padding: 57px 0 0 50px;
       margin-bottom: 0;
     }
 
     @media (min-width: $desktop-width) {
       width: 182px;
-      padding: 65px 0 0 81px;
+      padding: 58px 0 0 81px;
     }
   }
 
