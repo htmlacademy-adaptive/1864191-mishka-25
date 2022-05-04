@@ -91,6 +91,11 @@
     @media (min-width: $desktop-width) {
       background-position: 92% 55%;
     }
+
+    &:hover,
+    &:active {
+      background-color: $color-green-light-hov;
+    }
   }
 
   &--secondary {
@@ -98,6 +103,11 @@
     background-image: url("/../../img/toy-icon.svg");
     background-position: 90% 50%;
     background-repeat: no-repeat;
+
+    &:hover,
+    &:active {
+      background-color: $color-turquoise;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -107,8 +117,14 @@
 
   @media (min-width: $desktop-width) {
     width: 525px;
-    height: 119px;
+    height: 124px;
     background-position: 93% 55%;
+  }
+
+  &:hover {
+    @media (min-width: $tablet-width) {
+      transform: translateY(-5px);
+    }
   }
 }
 

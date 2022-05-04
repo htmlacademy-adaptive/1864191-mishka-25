@@ -15,6 +15,13 @@
   }
 
   &::after {
+    @media (max-width: $mobile-width-only) {
+      position: absolute;
+      bottom: 29px;
+      left: 0;
+      content: url("../../img/zigzag-line-mobile.svg");
+    }
+
     @media (min-width: $tablet-width) {
       position: absolute;
       bottom: -73px;
@@ -178,6 +185,7 @@
     margin: 0;
     align-self: end;
     font-size: 17px;
+    padding-top: 6px;
   }
 
   @media (min-width: $desktop-width) {
@@ -185,5 +193,15 @@
     grid-row: 5 / 6;
     justify-self: center;
     padding-top: 5px;
+  }
+
+  &:hover {
+    background-color: $color-text-light;
+    color: $color-white;
+  }
+
+  &:active {
+    background-color: $color-text-light;
+    color: $color-btn-active;
   }
 }

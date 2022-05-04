@@ -76,4 +76,12 @@
     padding: 33px 36px 31px 31px;
     margin: 0;
   }
+
+  &:hover {
+    color: $color-link-hover;
+  }
+
+  &:active {
+    color: $color-link-active;
+  }
 }
