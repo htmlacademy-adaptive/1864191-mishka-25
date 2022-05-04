@@ -15,13 +15,14 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
-    margin-left: 370px;
+    order: 0;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
     margin-left: 0;
+    order: 1;
   }
 }
 

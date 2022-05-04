@@ -1,7 +1,7 @@
 .catalog {
   display: grid;
   grid-template-rows: auto auto auto;
-  row-gap: 27px;
+  row-gap: 29px;
 
   @media (min-width: $tablet-width) {
     row-gap: 51px;

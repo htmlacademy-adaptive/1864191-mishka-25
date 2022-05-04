@@ -11,37 +11,3 @@
     flex-wrap: wrap;
   }
 }
-
-.main-header__logo {
-  object-fit: fill;
-  cursor: pointer;
-
-  @media (max-width: $mobile-width-only) {
-    margin-right: 67px;
-    padding-top: 5px;
-  }
-
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 22px;
-    left: 48px;
-    width: 113px;
-    height: 46px;
-  }
-
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 9px;
-    left: 500px;
-    width: 149px;
-    height: 72px;
-  }
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-}
