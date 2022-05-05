@@ -127,24 +127,33 @@
 .product__image {
   display: block;
   margin-bottom: 21px;
-  object-fit: fill;
 
   @media (min-width: $tablet-width) {
     grid-column: 2 / 4;
     grid-row: 2 / 6;
     margin: 0;
-    width: 334px;
-    height: 404px;
-    object-fit: cover;
     padding-top: 11px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 3 / 4;
     grid-row: 1 / 6;
+    padding: 0;
+  }
+}
+
+.product__image-photo {
+  width: 260px;
+  height: 315px;
+
+  @media (min-width: $tablet-width) {
+    width: 334px;
+    height: 404px;
+  }
+
+  @media (min-width: $desktop-width) {
     width: 525px;
     height: 636px;
-    padding: 0;
   }
 }
 
