@@ -8,9 +8,9 @@
   @media (min-width: $tablet-width) {
     position: relative;
     min-height: 680px;
-    margin-bottom: 51px;
+    margin-bottom: 50px;
     background-image: url("../../img/intro-tablet.jpg");
-    background-position: 30% 102%;
+    background-position: 30% 104%;
     background-repeat: no-repeat;
   }
 
@@ -26,7 +26,7 @@
   &::after {
     @media (min-width: $tablet-width) {
       position: absolute;
-      bottom: -15px;
+      bottom: -14px;
       content: url("../../img/zigzag-fill-tablet.svg");
     }
 
@@ -48,15 +48,15 @@
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 1.16;
-    margin-bottom: 372px;
+    margin-bottom: 370px;
     padding: 0;
-    padding-top: 89px;
+    padding-top: 88px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 1.08;
-    margin-bottom: 354px;
+    margin-bottom: 355px;
     padding-top: 97px;
   }
 }
@@ -70,26 +70,43 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    padding: 0 51px;
+    padding: 0 50px;
     margin-bottom: 40px;
   }
 }
 
 .intro__item {
+  display: flex;
+  justify-content: space-between;
   width: 320px;
   height: 103px;
-  display: block;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 334px;
+    height: 122px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 525px;
+    height: 124px;
+  }
+
+  &:hover {
+    @media (min-width: $tablet-width) {
+      transform: translateY(-5px);
+    }
+  }
 
   &--primary {
     background-color: $color-green-light;
-    background-image: url("../../img/interior-icon.svg");
-    background-position: 87% 55%;
-    background-repeat: no-repeat;
+    padding: 18px 35px 0 30px;
 
-    @media (min-width: $desktop-width) {
-      background-position: 92% 55%;
+    @media (min-width: $tablet-width) {
+      padding: 27px 36px 0 35px;
     }
 
     &:hover,
@@ -100,30 +117,15 @@
 
   &--secondary {
     background-color: $color-green-dark;
-    background-image: url("/../../img/toy-icon.svg");
-    background-position: 90% 50%;
-    background-repeat: no-repeat;
+    padding: 16px 26px 0 30px;
+
+    @media (min-width: $tablet-width) {
+      padding: 27px 34px 0 35px;
+    }
 
     &:hover,
     &:active {
       background-color: $color-turquoise;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 333px;
-    height: 119px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 525px;
-    height: 124px;
-    background-position: 93% 55%;
-  }
-
-  &:hover {
-    @media (min-width: $tablet-width) {
-      transform: translateY(-5px);
     }
   }
 }
@@ -132,19 +134,28 @@
   display: block;
   text-decoration: none;
   color: $color-white;
-  padding: 25px 160px 31px 30px;
   box-sizing: border-box;
   font-size: 19px;
   line-height: 1.26;
   font-weight: 700;
+  padding-top: 7px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1.5;
-    padding-left: 35px;
+    padding: 0;
+  }
+}
+
+.intro__icon {
+  fill: $color-intro-icon;
+  padding-top: 4px;
+
+  .intro__item:hover & {
+    fill: $color-intro-icon-hov;
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 27px 303px 0 37px;
+  .intro__item:active & {
+    fill: $color-intro-icon-act;
   }
 }

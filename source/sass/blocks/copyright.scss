@@ -23,8 +23,24 @@
   font-size: 19px;
   line-height: 0.95;
   margin-right: 28px;
+
+  @media (min-width: $tablet-width) and (max-width: 1149px) {
+    margin-right: 26px;
+  }
 }
 
 .copyright__link {
   height: 35px;
+}
+
+.copyright__icon {
+  fill: $color-green-light;
+
+  .copyright__link:hover & {
+    fill: $color-turquoise;
+  }
+
+  .copyright__link:active & {
+    fill: $color-turquoise-middle;
+  }
 }
