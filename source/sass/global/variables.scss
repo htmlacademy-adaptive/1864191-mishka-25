@@ -1,13 +1,21 @@
 $color-text: #000000;
 $color-text-light: #444444;
 $color-green-light: #63d1bb;
+$color-green-light-hov: #59d5bc;
 $color-green-dark: #56c3b2;
 $color-white: #ffffff;
 $color-bg-grey: #f1f1f1;
 $color-border: #ececec;
 $color-bg-header: #fafafa;
-$color-nav-border: rgba(0, 0, 0, 0.1);
+$color-nav-border: fade-out($color-text, 0.9);
 $color-email-underline: #62d1ba;
+$color-link-hover: fade-out($color-text, 0.4);
+$color-link-active: fade-out($color-text, 0.7);
+$color-icon: fade-out($color-text, 0.8);
+$color-icon-active: fade-out($color-green-light, 0.7);
+$color-btn-active: fade-out($color-white, 0.7);
+$color-turquoise: #46c1ae;
+$color-turquoise-light: fade-out($color-turquoise, 0.9);
 
 $tablet-width: 768px;
 $desktop-width: 1150px;

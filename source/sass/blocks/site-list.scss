@@ -18,13 +18,15 @@
     padding-left: 50px;
     background-color: $color-bg-grey;
     border-top: 1px solid $color-nav-border;
+    order: 1;
   }
 
   @media (min-width: $desktop-width) {
     background-color: $color-white;
     border: none;
-    margin-right: 42px;
+    margin-right: 36px;
     padding-left: 20px;
+    order: -1;
   }
 
   &--theme-light {
@@ -73,7 +75,15 @@
   @media (min-width: $desktop-width) {
     font-size: 17px;
     line-height: 1.41;
-    padding: 33px 36px 31px 31px;
+    padding: 33px 39px 31px 31px;
     margin: 0;
+  }
+
+  &:hover {
+    color: $color-link-hover;
+  }
+
+  &:active {
+    color: $color-link-active;
   }
 }

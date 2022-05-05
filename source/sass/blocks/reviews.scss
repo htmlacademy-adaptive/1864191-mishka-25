@@ -1,23 +1,33 @@
 .reviews {
+  position: relative;
   padding: 31px 30px;
 
   @media (min-width: $tablet-width) {
-    position: relative;
     min-height: 457px;
     display: flex;
     flex-wrap: wrap;
     padding: 0 50px;
     margin-bottom: 154px;
-    background: url("../../img/review-bg.jpg") left center no-repeat;
+    background-image: url("../../img/review-bg.jpg"), linear-gradient(to right, $color-bg-grey 350px, $color-white 350px);
+    background-position: left center, left center;
+    background-repeat: no-repeat, no-repeat;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 49px 0 200px;
     margin-bottom: 162px;
+    background-image: url("../../img/review-bg.jpg"), linear-gradient(to right, $color-white 50px, $color-bg-grey 50px, $color-bg-grey 398px, $color-white 398px);
     background-position: 6% 100%;
   }
 
   &::after {
+    @media (max-width: $mobile-width-only) {
+      position: absolute;
+      bottom: 37px;
+      left: 0;
+      content: url("../../img/zigzag-line-mobile.svg");
+    }
+
     @media (min-width: $tablet-width) {
       position: absolute;
       left: 0;
@@ -158,6 +168,14 @@
     border: none;
     padding: 0;
   }
+
+  &:hover {
+    color: $color-link-hover;
+  }
+
+  &:active {
+    color: $color-link-active;
+  }
 }
 
 .reviews__write {
@@ -172,5 +190,15 @@
     line-height: 1.18;
     margin: 0;
     margin-top: 80px;
+  }
+
+  &:hover {
+    background-color: $color-text-light;
+    color: $color-white;
+  }
+
+  &:active {
+    background-color: $color-text-light;
+    color: $color-btn-active;
   }
 }

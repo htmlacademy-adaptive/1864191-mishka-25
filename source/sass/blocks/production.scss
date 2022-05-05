@@ -11,12 +11,20 @@
   @media (min-width: $desktop-width) {
     max-height: 455px;
     flex-wrap: wrap;
+
+    &:hover {
+      box-shadow: 0 6px 10px $color-nav-border;
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px $color-nav-border;
+    }
   }
 }
 
 .production__subtitle {
   position: relative;
-  padding-left: 91px;
+  padding-left: 90px;
   margin-bottom: 24.5px;
   line-height: 1.41;
 
@@ -116,6 +124,15 @@
     top: 188px;
     left: 292px;
   }
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
 }
 
 .production__order-button {
@@ -137,5 +154,15 @@
     padding-top: 15px;
     font-size: 17px;
     line-height: 0.94;
+  }
+
+  &:hover {
+    background-color: $color-text-light;
+    color: $color-white;
+  }
+
+  &:active {
+    background-color: $color-text-light;
+    color: $color-btn-active;
   }
 }

@@ -23,6 +23,16 @@
     flex-direction: column;
     flex-wrap: wrap;
   }
+
+  @media (min-width: $desktop-width) {
+    &:hover {
+      box-shadow: 0 6px 10px $color-nav-border;
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px $color-nav-border;
+    }
+  }
 }
 
 .catalog__link-image {
@@ -77,6 +87,14 @@
     font-size: 20px;
     line-height: 1.2;
     margin-bottom: 5.5px;
+  }
+
+  &:hover {
+    color: $color-link-hover;
+  }
+
+  &:active {
+    color: $color-link-active;
   }
 }
 
@@ -167,4 +185,16 @@
   padding: 0;
   background-color: transparent;
   cursor: pointer;
+}
+
+.catalog__icon {
+  fill: $color-icon;
+}
+
+.catalog__to-cart:hover .catalog__icon {
+  fill: $color-green-light;
+}
+
+.catalog__to-cart:active .catalog__icon {
+  fill: $color-icon-active;
 }

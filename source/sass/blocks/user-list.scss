@@ -15,11 +15,14 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
+    order: 0;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
+    margin-left: 0;
+    order: 1;
   }
 }
 
@@ -62,14 +65,31 @@
   @media (max-width: $mobile-width-only) {
     padding-top: 29px;
   }
+
+  &:hover {
+    color: $color-link-hover;
+  }
+
+  &:active {
+    color: $color-link-active;
+  }
 }
 
 .user-list__icon {
   margin-right: 22px;
+  fill: $color-icon;
 
   @media (min-width: $tablet-width) {
     margin-right: 26px;
   }
+}
+
+.user-list__link:hover .user-list__icon {
+  fill: $color-green-light;
+}
+
+.user-list__link:active .user-list__icon {
+  fill: $color-icon-active;
 }
 
 .user-list__text {

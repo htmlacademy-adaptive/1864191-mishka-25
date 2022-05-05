@@ -21,3 +21,15 @@
     display: none;
   }
 }
+
+.footer__logo-image {
+  fill: $color-text;
+}
+
+.footer__logo-link:hover .footer__logo-image {
+  fill: $color-green-light;
+}
+
+.footer__logo-link:active .footer__logo-image {
+  fill: $color-icon-active;
+}

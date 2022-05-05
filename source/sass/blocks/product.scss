@@ -11,11 +11,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 40px;
     grid-template-columns: 118px auto auto;
   }
 
   &::after {
+    @media (max-width: $mobile-width-only) {
+      position: absolute;
+      bottom: 29px;
+      left: 0;
+      content: url("../../img/zigzag-line-mobile.svg");
+    }
+
     @media (min-width: $tablet-width) {
       position: absolute;
       bottom: -73px;
@@ -48,7 +54,7 @@
     z-index: 1;
     font-size: 53px;
     line-height: 1.08;
-    padding: 72px 0 0 57px;
+    padding: 61px 0 0 57px;
     margin: 0;
   }
 }
@@ -70,7 +76,7 @@
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    padding: 80px 0 0 45px;
+    padding: 69px 0 0 45px;
   }
 }
 
@@ -113,7 +119,7 @@
   @media (min-width: $desktop-width) {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
-    padding: 30px 57px;
+    padding: 32px 57px;
     margin-bottom: 50px;
   }
 }
@@ -138,6 +144,7 @@
     grid-row: 1 / 6;
     width: 525px;
     height: 636px;
+    padding: 0;
   }
 }
 
@@ -178,11 +185,23 @@
     margin: 0;
     align-self: end;
     font-size: 17px;
+    padding-top: 6px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 2 / 3;
     grid-row: 5 / 6;
     justify-self: center;
+    padding-top: 5px;
+  }
+
+  &:hover {
+    background-color: $color-text-light;
+    color: $color-white;
+  }
+
+  &:active {
+    background-color: $color-text-light;
+    color: $color-btn-active;
   }
 }
