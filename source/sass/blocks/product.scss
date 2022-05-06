@@ -7,7 +7,7 @@
     padding: 0 50px;
     grid-template-columns: auto auto 100px;
     grid-template-rows: repeat(5, auto);
-    margin-bottom: 127px;
+    margin-bottom: 122px;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,13 +24,13 @@
 
     @media (min-width: $tablet-width) {
       position: absolute;
-      bottom: -75px;
+      bottom: -70px;
       content: url("../../img/zigzag-line-tablet.svg");
     }
 
     @media (min-width: $desktop-width) {
       position: absolute;
-      bottom: -100px;
+      bottom: -96px;
       left: 50px;
       content: url("../../img/zigzag-line-desktop.svg");
     }
@@ -195,6 +195,7 @@
     align-self: end;
     font-size: 17px;
     padding-top: 6px;
+    margin-bottom: 4px;
   }
 
   @media (min-width: $desktop-width) {
