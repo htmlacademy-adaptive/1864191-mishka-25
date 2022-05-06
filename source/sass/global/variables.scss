@@ -15,7 +15,12 @@ $color-icon: fade-out($color-text, 0.8);
 $color-icon-active: fade-out($color-green-light, 0.7);
 $color-btn-active: fade-out($color-white, 0.7);
 $color-turquoise: #46c1ae;
+$color-turquoise-middle: fade-out($color-turquoise, 0.7);
 $color-turquoise-light: fade-out($color-turquoise, 0.9);
+$color-intro-icon: fade-out(#149080, 0.5);
+$color-intro-icon-hov: fade-out(#149080, 0.3);
+$color-intro-icon-act: fade-out(#149080, 0.7);
+$color-social: #231f20;
 
 $tablet-width: 768px;
 $desktop-width: 1150px;

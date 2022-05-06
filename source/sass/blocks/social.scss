@@ -17,3 +17,15 @@
 .social__item:not(:last-child) {
   margin-right: 33px;
 }
+
+.social__icon {
+  fill: $color-social;
+
+  .social__link:hover & {
+    fill: $color-turquoise;
+  }
+
+  .social__link:active & {
+    fill: $color-turquoise-middle;
+  }
+}

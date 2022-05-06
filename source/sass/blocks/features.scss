@@ -6,6 +6,10 @@
   font-size: 15px;
   line-height: 1.33;
   color: $color-text-light;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 42px;
+  }
 }
 
 .features__parameter {

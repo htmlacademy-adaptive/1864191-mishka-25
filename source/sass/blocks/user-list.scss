@@ -49,7 +49,11 @@
 
   &:last-child {
     @media (min-width: $tablet-width) {
-      padding: 32px 31px;
+      padding: 33px 31px 31px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 33px 31px 30px;
     }
   }
 }
