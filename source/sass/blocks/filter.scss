@@ -329,7 +329,28 @@
       left: -79px;
     }
   }
+
+  .filter__input:hover + & {
+    border-color: $color-email-underline;
+  }
+
+  .filter__input:focus-visible + & {
+    outline: 3px solid $color-text;
+  }
+
+  .filter__input:active + & {
+    border-color: $color-link-active;
+  }
 }
+
+.filter__input--radio:checked + .filter__mark--radio {
+  background: url("../../img/mark-radio.svg") center no-repeat;
+}
+
+.filter__input--checkbox:checked + .filter__mark--checkbox {
+  background: url("../../img/mark-checkbox.svg") center no-repeat;
+}
+
 
 .filter__input {
   width: 257px;
@@ -362,12 +383,12 @@
     border-color: $color-email-underline;
   }
 
-  &:active {
-    border-color: $color-email-underline;
-  }
-
   &:focus-visible {
     outline: none;
+  }
+
+  &:active {
+    border-color: $color-email-underline;
   }
 }
 
@@ -501,6 +522,10 @@
   &:hover {
     background-color: $color-text-light;
     color: $color-white;
+  }
+
+  &:focus {
+    outline: 2px solid $color-text;
   }
 
   &:active {

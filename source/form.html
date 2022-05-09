@@ -7,7 +7,9 @@
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="./img/favicons/favicon-svg.svg"> <!-- 32×32 -->
+  <link rel="apple-touch-icon" href="./img/favicons/apple-icon-180x180.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page-body">
@@ -79,7 +81,7 @@
               <label class="filter__label filter__label--radio">
                 <input class="filter__input filter__input--radio visually-hidden" type="radio" name="product-type"
                   value="accessory" checked>
-                <span class="filter__mark filter__mark--radio"></span>
+                <span class="filter__mark filter__mark--radio" tabindex="0"></span>
                 Аксессуар для интерьера
               </label>
             </li>
@@ -87,7 +89,7 @@
               <label class="filter__label filter__label--radio">
                 <input class="filter__input filter__input--radio visually-hidden" type="radio" name="product-type"
                   value="toys">
-                <span class="filter__mark filter__mark--radio"></span>
+                <span class="filter__mark filter__mark--radio" tabindex="0"></span>
                 Детская игрушка
               </label>
             </li>
@@ -99,43 +101,43 @@
           <ul class="filter__list filter__list--checkbox">
             <li class="filter__item filter__item--color">
               <label class="filter__label filter__label--checkbox">
-                <input class="filter__input visually-hidden" type="checkbox" name="white" checked>
-                <span class="filter__mark filter__mark--checkbox"></span>
+                <input class="filter__input filter__input--checkbox visually-hidden" tabindex="-1" type="checkbox" name="white" checked>
+                <span class="filter__mark filter__mark--checkbox" tabindex="0"></span>
                 Белый
               </label>
             </li>
             <li class="filter__item filter__item--color">
               <label class="filter__label filter__label--checkbox">
-                <input class="filter__input visually-hidden" type="checkbox" name="gray" checked>
-                <span class="filter__mark filter__mark--checkbox"></span>
+                <input class="filter__input filter__input--checkbox visually-hidden" tabindex="-1" type="checkbox" name="gray" checked>
+                <span class="filter__mark filter__mark--checkbox" tabindex="0"></span>
                 Серый
               </label>
             </li>
             <li class="filter__item filter__item--color">
               <label class="filter__label filter__label--checkbox">
-                <input class="filter__input visually-hidden" type="checkbox" name="tiffany">
-                <span class="filter__mark filter__mark--checkbox"></span>
+                <input class="filter__input filter__input--checkbox visually-hidden" tabindex="-1" type="checkbox" name="tiffany">
+                <span class="filter__mark filter__mark--checkbox" tabindex="0"></span>
                 Тиффани
               </label>
             </li>
             <li class="filter__item filter__item--color">
               <label class="filter__label filter__label--checkbox">
-                <input class="filter__input visually-hidden" type="checkbox" name="black">
-                <span class="filter__mark filter__mark--checkbox"></span>
+                <input class="filter__input filter__input--checkbox visually-hidden" tabindex="-1" type="checkbox" name="black">
+                <span class="filter__mark filter__mark--checkbox" tabindex="0"></span>
                 Черный
               </label>
             </li>
             <li class="filter__item filter__item--color">
               <label class="filter__label filter__label--checkbox">
-                <input class="filter__input visually-hidden" type="checkbox" name="pink">
-                <span class="filter__mark filter__mark--checkbox"></span>
+                <input class="filter__input filter__input--checkbox visually-hidden" tabindex="-1" type="checkbox" name="pink">
+                <span class="filter__mark filter__mark--checkbox" tabindex="0"></span>
                 Розовый
               </label>
             </li>
             <li class="filter__item filter__item--color">
               <label class="filter__label filter__label--checkbox">
-                <input class="filter__input visually-hidden" type="checkbox" name="orange">
-                <span class="filter__mark filter__mark--checkbox"></span>
+                <input class="filter__input filter__input--checkbox visually-hidden" tabindex="-1" type="checkbox" name="orange">
+                <span class="filter__mark filter__mark--checkbox" tabindex="0"></span>
                 Оранжевый
               </label>
             </li>
