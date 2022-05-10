@@ -7,7 +7,9 @@
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="./img/favicons/favicon-svg.svg"> <!-- 32×32 -->
+  <link rel="apple-touch-icon" href="./img/favicons/apple-icon-180x180.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body>
@@ -74,9 +76,9 @@
             <li class="catalog__item">
               <a class="catalog__link-image" href="#">
                 <picture>
-                  <source media="(min-width: 1150px)" srcset="./img/photo-1-desktop.jpg">
-                  <source media="(min-width: 768px)" srcset="./img/photo-1-tablet.jpg">
-                  <img class="catalog__image" width="260" height="195" src="./img/photo-1-mobile.jpg"
+                  <source media="(min-width: 1150px)" srcset="./img/photo-1-desktop.jpg 1x, ./img/photo-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./img/photo-1-tablet.jpg 1x, ./img/photo-1-tablet@2x.jpg 2x">
+                  <img class="catalog__image" src="./img/photo-1-mobile.jpg" srcset="./img/photo-1-mobile@2x.jpg 2x" width="260" height="195"
                     alt="Игрушка заяц.">
                 </picture>
               </a>
@@ -98,9 +100,9 @@
             <li class="catalog__item">
               <a class="catalog__link-image" href="#">
                 <picture>
-                  <source media="(min-width: 1150px)" srcset="./img/photo-2-desktop.jpg">
-                  <source media="(min-width: 768px)" srcset="./img/photo-2-tablet.jpg">
-                  <img class="catalog__image" width="260" height="195" src="./img/photo-2-mobile.jpg"
+                  <source media="(min-width: 1150px)" srcset="./img/photo-2-desktop.jpg 1x, ./img/photo-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./img/photo-2-tablet.jpg 1x, ./img/photo-2-tablet@2x.jpg 2x">
+                  <img class="catalog__image" src="./img/photo-2-mobile.jpg" srcset="./img/photo-2-mobile@2x.jpg 2x" width="260" height="195"
                     alt="Вязаная корзинка.">
                 </picture>
               </a>
@@ -122,9 +124,9 @@
             <li class="catalog__item">
               <a class="catalog__link-image" href="#">
                 <picture>
-                  <source media="(min-width: 1150px)" srcset="./img/photo-3-desktop.jpg">
-                  <source media="(min-width: 768px)" srcset="./img/photo-3-tablet.jpg">
-                  <img class="catalog__image" width="260" height="195" src="./img/photo-3-mobile.jpg"
+                  <source media="(min-width: 1150px)" srcset="./img/photo-3-desktop.jpg 1x, ./img/photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./img/photo-3-tablet.jpg 1x, ./img/photo-3-tablet@2x.jpg 2x">
+                  <img class="catalog__image" src="./img/photo-3-mobile.jpg" srcst="./img/photo-3-mobile@2x.jpg 2x" width="260" height="195"
                     alt="Большая вязаная корзинка">
                 </picture>
               </a>
@@ -148,12 +150,12 @@
             <h3 class="production__subtitle subtitle">Процесс производства</h3>
             <div class="production__video-container">
               <picture>
-                <source media="(min-width: 1150px)" srcset="./img/video-desktop.jpg">
-                <source media="(min-width: 768px)" srcset="./img/video-tablet.jpg">
-                <img class="production__video" width="260" height="150" src="./img/video-mobile.jpg"
+                <source media="(min-width: 1150px)" srcset="./img/video-desktop.jpg 1x, ./img/video-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/video-tablet.jpg 1x, ./img/video-tablet@2x.jpg 2x">
+                <img class="production__video"  src="./img/video-mobile.jpg" srcset="./img/video-mobile@2x.jpg 2x" width="260" height="150"
                   alt="Видео процесса производства">
               </picture>
-              <div class="production__playpause"></div>
+              <div class="production__playpause" tabindex="0"></div>
             </div>
             <p class="production__video-description">По просьбам наших любимых фолловеров мы сняли для вас подробное
               видео

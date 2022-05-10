@@ -11,6 +11,11 @@
     background-image: url("../../img/review-bg.jpg"), linear-gradient(to right, $color-bg-grey 350px, $color-white 350px);
     background-position: left center, left center;
     background-repeat: no-repeat, no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/review-bg@2x.jpg");
+      background-size: 350px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -18,6 +23,10 @@
     margin-bottom: 162px;
     background-image: url("../../img/review-bg.jpg"), linear-gradient(to right, $color-white 50px, $color-bg-grey 50px, $color-bg-grey 398px, $color-white 398px);
     background-position: 6% 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/review-bg@2x.jpg");
+    }
   }
 
   &::after {
@@ -87,7 +96,7 @@
   @media (min-width: $desktop-width) {
     padding: 0 65px 44px 25px;
     margin: 0;
-    margin-top: -27px;
+    margin-top: -30px;
   }
 }
 

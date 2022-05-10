@@ -129,6 +129,10 @@
     transform: scale(1.2);
   }
 
+  &:focus-within {
+    outline: 2px solid $color-text;
+  }
+
   &:active {
     transform: scale(0.8);
     opacity: 0.3;
@@ -159,6 +163,10 @@
   &:hover {
     background-color: $color-text-light;
     color: $color-white;
+  }
+
+  &:focus {
+    outline: 2px solid $color-text;
   }
 
   &:active {
