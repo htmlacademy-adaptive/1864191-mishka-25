@@ -26,7 +26,7 @@
   cursor: pointer;
 
   @media (max-width: $mobile-width-only) {
-    margin-right: 67px;
+    margin-right: 68px;
     padding-top: 5px;
   }
 
@@ -102,8 +102,8 @@
 .main-nav--hidden .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -1px;
+  left: -1px;
   width: 20px;
   height: 2px;
   background-color: $color-text;

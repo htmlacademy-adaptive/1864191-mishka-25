@@ -14,7 +14,7 @@
     min-height: 169px;
     font-size: 43px;
     line-height: 1.16;
-    padding-top: 33px;
+    padding-top: 35px;
     margin-bottom: 56px;
   }
 
@@ -29,7 +29,7 @@
   &::after {
     @media (min-width: $tablet-width) {
       position: absolute;
-      bottom: -9px;
+      bottom: -11px;
       left: 0;
       content: url("../../img/zigzag-fill-tablet.svg");
     }

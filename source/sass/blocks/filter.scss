@@ -23,11 +23,7 @@
 
     @media (min-width: $tablet-width) {
       padding-left: 50px;
-      margin-bottom: 68px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-bottom: 67px;
+      margin-bottom: 66px;
     }
   }
 
@@ -45,12 +41,11 @@
 
     @media (min-width: $tablet-width) {
       padding-left: 50px;
-      margin-bottom: 29px;
+      margin-bottom: 25px;
     }
 
     @media (min-width: $desktop-width) {
       padding: 0 176px 0 0;
-      margin-bottom: 30px;
     }
   }
 
@@ -73,18 +68,20 @@
       padding-bottom: 50px;
       background-color: $color-bg-grey;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 51px;
+    }
   }
 
   &--comments {
-    margin-bottom: 2px;
-
     @media (min-width: $tablet-width) {
       padding: 0 50px;
-      margin-bottom: 36px;
+      margin-bottom: 34px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 0 226px 0 0;
+      padding: 0 225px 0 0;
       margin-bottom: 32px;
     }
   }
@@ -137,6 +134,7 @@
 
     @media (min-width: $desktop-width) {
       padding-left: 112px;
+      padding-top: 68px;
     }
   }
 
@@ -160,7 +158,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 21px 0 0 112px;
+      padding: 21px 0 0 113px;
     }
   }
 
@@ -222,19 +220,23 @@
     padding: 0;
     padding-left: 73px;
     padding-top: 10px;
-    margin-bottom: 68px;
+    margin-bottom: 69px;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: flex-start;
     padding-left: 0;
-    margin-bottom: 67px;
+    margin-bottom: 66px;
   }
 }
 
 .filter__list--name {
   @media (min-width: $tablet-width) {
-    padding-top: 53px;
+    padding-top: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 3px;
   }
 }
 
@@ -245,7 +247,7 @@
     margin-bottom: 24px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 56px;
+      margin-bottom: 58px;
     }
   }
 
@@ -277,6 +279,10 @@
 
   &--name {
     margin-bottom: 23px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 25px;
+    }
   }
 
   &--radio,
@@ -301,8 +307,8 @@
   border: 2px solid $color-text-light;
 
   &--radio {
-    width: 38px;
-    height: 38px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
 
     @media (min-width: $tablet-width) {
@@ -313,6 +319,12 @@
     }
   }
 
+  &--radio-first {
+    @media (max-width: $mobile-width-only) {
+      top: -5px;
+    }
+  }
+
   &--checkbox {
     width: 34px;
     height: 34px;
@@ -320,13 +332,13 @@
     @media (min-width: $tablet-width) {
       width: 48px;
       height: 48px;
-      top: -15px;
-      left: -83px;
+      top: -16px;
+      left: -81px;
     }
 
     @media (min-width: $desktop-width) {
       top: -20px;
-      left: -79px;
+      left: -81px;
     }
   }
 
@@ -345,12 +357,19 @@
 
 .filter__input--radio:checked + .filter__mark--radio {
   background: url("../../img/mark-radio.svg") center no-repeat;
+
+  @media (max-width: $mobile-width-only) {
+    background-size: 50%;
+  }
 }
 
 .filter__input--checkbox:checked + .filter__mark--checkbox {
   background: url("../../img/mark-checkbox.svg") center no-repeat;
-}
 
+  @media (max-width: $mobile-width-only) {
+    background-size: 73%;
+  }
+}
 
 .filter__input {
   width: 257px;
@@ -377,6 +396,10 @@
       line-height: 0.95;
       padding: 15px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 17px;
+    }
   }
 
   &:hover {
@@ -397,9 +420,9 @@
     width: 100%;
     font-size: 19px;
     line-height: 0.95;
-    margin-right: 50px;
+    margin-right: 49px;
     margin-left: 25px;
-    padding-left: 18px;
+    padding-left: 17px;
   }
 }
 
@@ -416,7 +439,6 @@
   @media (min-width: $desktop-width) {
     width: 679px;
     margin: 0;
-    padding-top: 49px;
   }
 }
 
@@ -434,7 +456,7 @@
   @media (min-width: $desktop-width) {
     width: 679px;
     margin: 0;
-    padding-top: 27px;
+    padding-top: 26px;
   }
 }
 
@@ -499,7 +521,7 @@
   line-height: 1.14;
   color: $color-text-light;
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     order: 1;
@@ -516,7 +538,12 @@
 
   @media (min-width: $tablet-width) {
     width: 230px;
-    margin-bottom: 51px;
+    margin-bottom: 50px;
+    margin-top: 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
   }
 
   &:hover {
