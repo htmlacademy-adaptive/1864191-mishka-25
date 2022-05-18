@@ -41,7 +41,7 @@
       display: block;
       width: 18px;
       height: 18px;
-      padding: 36px 32px 34px;
+      padding: 37px 31px 33px 33px;
       border-left: 1px solid $color-nav-border;
       border-right: 1px solid $color-nav-border;
     }
@@ -49,11 +49,11 @@
 
   &:last-child {
     @media (min-width: $tablet-width) {
-      padding: 33px 31px 31px;
+      padding: 34px 32px 30px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 33px 31px 30px;
+      padding: 34px 31px 30px;
     }
   }
 }
