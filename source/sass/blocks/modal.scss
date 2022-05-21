@@ -9,7 +9,7 @@
 
   @media (min-width: $tablet-width) {
     width: 566px;
-    padding: 35px 94px 34px;
+    padding: 0 96px;
   }
 }
 
@@ -21,8 +21,9 @@
   padding: 0 51px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding: 37px 0 0 2px;
     font-size: 30px;
     line-height: 1.9;
+    margin-bottom: 13px;
   }
 }

@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 38px 250px 6px 225px;
+    padding: 38px 250px 32px 225px;
   }
 }
 
@@ -40,6 +40,10 @@
     flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 26px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
   }
 }
 

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/svg+xml" href="./img/favicons/favicon-svg.svg"> <!-- 32×32 -->
   <link rel="apple-touch-icon" href="./img/favicons/apple-icon-180x180.png"> <!-- 180×180 -->
@@ -19,7 +19,7 @@
         <picture>
           <source media="(min-width: 1150px)" srcset="./img/mishka-logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="./img/mishka-logo-tablet.svg">
-          <img class="main-nav__logo-image" src="./img/mishka-logo-mobile.svg" width="86px" height="35px"
+          <img class="main-nav__logo-image" src="./img/mishka-logo-mobile.svg" width="86" height="35"
             alt="Логотип магазина Мишка.">
         </picture>
       </a>
@@ -78,7 +78,7 @@
               <label class="filter__label filter__label--radio">
                 <input class="filter__input filter__input--radio visually-hidden" type="radio" name="product-type"
                   value="accessory" checked>
-                <span class="filter__mark filter__mark--radio filter__mark--radio-first" tabindex="0"></span>
+                <span class="filter__mark filter__mark--radio filter__mark--radio-first"  ></span>
                 Аксессуар для интерьера
               </label>
             </li>
@@ -86,7 +86,7 @@
               <label class="filter__label filter__label--radio">
                 <input class="filter__input filter__input--radio visually-hidden" type="radio" name="product-type"
                   value="toys">
-                <span class="filter__mark filter__mark--radio" tabindex="0"></span>
+                <span class="filter__mark filter__mark--radio"></span>
                 Детская игрушка
               </label>
             </li>
@@ -100,7 +100,7 @@
               <label class="filter__label filter__label--checkbox">
                 <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox"
                   name="white" checked>
-                <span class="filter__mark filter__mark--checkbox" tabindex="0"></span>
+                <span class="filter__mark filter__mark--checkbox"></span>
                 Белый
               </label>
             </li>
@@ -108,7 +108,7 @@
               <label class="filter__label filter__label--checkbox">
                 <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox"
                   name="gray" checked>
-                <span class="filter__mark filter__mark--checkbox" tabindex="0"></span>
+                <span class="filter__mark filter__mark--checkbox"></span>
                 Серый
               </label>
             </li>
@@ -116,7 +116,7 @@
               <label class="filter__label filter__label--checkbox">
                 <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox"
                   name="tiffany">
-                <span class="filter__mark filter__mark--checkbox" tabindex="0"></span>
+                <span class="filter__mark filter__mark--checkbox"></span>
                 Тиффани
               </label>
             </li>
@@ -124,7 +124,7 @@
               <label class="filter__label filter__label--checkbox">
                 <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox"
                   name="black">
-                <span class="filter__mark filter__mark--checkbox" tabindex="0"></span>
+                <span class="filter__mark filter__mark--checkbox"></span>
                 Черный
               </label>
             </li>
@@ -132,7 +132,7 @@
               <label class="filter__label filter__label--checkbox">
                 <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox"
                   name="pink">
-                <span class="filter__mark filter__mark--checkbox" tabindex="0"></span>
+                <span class="filter__mark filter__mark--checkbox"></span>
                 Розовый
               </label>
             </li>
@@ -140,7 +140,7 @@
               <label class="filter__label filter__label--checkbox">
                 <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox"
                   name="orange">
-                <span class="filter__mark filter__mark--checkbox" tabindex="0"></span>
+                <span class="filter__mark filter__mark--checkbox"></span>
                 Оранжевый
               </label>
             </li>
@@ -203,7 +203,7 @@
 
   <footer class="footer">
     <div class="footer__logo">
-      <a class="footer__logo-link" href="#">
+      <a class="footer__logo-link" href="index.html">
         <svg class="footer__logo-image" width="102" height="35" fill="currentColor">
           <use xlink:href="./img/sprite.svg#footer-logo"></use>
         </svg>

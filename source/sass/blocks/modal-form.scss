@@ -18,6 +18,7 @@
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 1.76;
+    margin-bottom: 19px;
   }
 }
 
@@ -25,11 +26,30 @@
   list-style-type: none;
   display: flex;
   margin: 0;
-  margin-bottom: 31px;
+  margin-bottom: 82px;
   padding: 0;
 }
 
-.modal-form__item {
+.modal-form__item:not(:last-child) {
+  margin-right: 89px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 119px;
+  }
+}
+
+.modal-form__label {
+  position: relative;
+  font-size: 17px;
+  line-height: 0.94;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $color-text-light;
+  cursor: pointer;
+}
+
+.modal-form__mark {
+  position: absolute;
   width: 78px;
   height: 48px;
   border: 2px solid rgba(68, 68, 68, 0.1);
@@ -37,26 +57,26 @@
   align-items: center;
   justify-content: center;
 
-  &--active {
-    border-color: $color-green-light;
-  }
-
   @media (min-width: $tablet-width) {
-    width: 112px;
-    height: 52px;
+    width: 108px;
+    height: 48px;
+  }
+
+  .modal-form__input:hover + & {
+    border-color: $color-email-underline;
+  }
+
+  .modal-form__input:focus-visible + & {
+    outline: 3px solid $color-text;
+  }
+
+  .modal-form__input:active + & {
+    border-color: $color-link-active;
   }
 }
 
-.modal-form__item:not(:last-child) {
-  margin-right: 7px;
-}
-
-.modal-form__label {
-  font-size: 17px;
-  line-height: 0.94;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: $color-text-light;
+.modal-form__input:checked + .modal-form__mark {
+  border-color: $color-green-light;
 }
 
 .modal-form__button {
@@ -65,8 +85,10 @@
   font-size: 17px;
   line-height: 0.94;
   color: $color-white;
+  font-family: "Open sans", sans-serif;
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    margin-bottom: 45px;
   }
 }
