@@ -312,9 +312,9 @@
     border-radius: 50%;
 
     @media (min-width: $tablet-width) {
-      width: 46px;
-      height: 46px;
-      top: -17px;
+      width: 45px;
+      height: 45px;
+      top: -15px;
       left: -78px;
     }
   }
@@ -338,7 +338,6 @@
 
     @media (min-width: $desktop-width) {
       top: -20px;
-      left: -81px;
     }
   }
 
@@ -356,7 +355,7 @@
 }
 
 .filter__input--radio:checked + .filter__mark--radio {
-  background: url("../../img/mark-radio.svg") center no-repeat;
+  background: url("../../img/mark-radio.svg") 50% 50% no-repeat;
 
   @media (max-width: $mobile-width-only) {
     background-size: 50%;
@@ -534,7 +533,7 @@
   margin-bottom: 55px;
   font-size: 17px;
   line-height: 0.94;
-  padding-top: 5px;
+  padding-top: 2px;
 
   @media (min-width: $tablet-width) {
     width: 230px;

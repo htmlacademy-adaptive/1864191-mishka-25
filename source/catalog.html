@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/svg+xml" href="./img/favicons/favicon-svg.svg"> <!-- 32×32 -->
   <link rel="apple-touch-icon" href="./img/favicons/apple-icon-180x180.png"> <!-- 180×180 -->
@@ -20,7 +20,7 @@
           <picture>
             <source media="(min-width: 1150px)" srcset="./img/mishka-logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="./img/mishka-logo-tablet.svg">
-            <img class="main-nav__logo-image" src="./img/mishka-logo-mobile.svg" width="86px" height="35px"
+            <img class="main-nav__logo-image" src="./img/mishka-logo-mobile.svg" width="86" height="35"
               alt="Логотип магазина Мишка.">
           </picture>
         </a>
@@ -87,7 +87,7 @@
               <p class="catalog__description">Рост 30 см, вес 200 г</p>
               <div class="catalog__price-cart">
                 <b class="catalog__price">1 200 руб.</b>
-                <button class="catalog__to-cart" type="button" aria-label="Добавить в корзину.">
+                <button class="catalog__to-cart modal-toggle" type="button" aria-label="Добавить в корзину.">
                   <svg class="catalog__icon" width="21" height="18" fill="currentColor">
                     <use xlink:href="./img/sprite.svg#icon-cart"></use>
                   </svg>
@@ -111,7 +111,7 @@
               <p class="catalog__description">Диаметр 15 см, высота 10 см</p>
               <div class="catalog__price-cart">
                 <b class="catalog__price">690 руб.</b>
-                <button class="catalog__to-cart" type="button" aria-label="Добавить в корзину.">
+                <button class="catalog__to-cart modal-toggle" type="button" aria-label="Добавить в корзину.">
                   <svg class="catalog__icon" width="21" height="18" fill="currentColor">
                     <use xlink:href="./img/sprite.svg#icon-cart"></use>
                   </svg>
@@ -125,7 +125,7 @@
                     srcset="./img/photo-3-desktop.jpg 1x, ./img/photo-3-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
                     srcset="./img/photo-3-tablet.jpg 1x, ./img/photo-3-tablet@2x.jpg 2x">
-                  <img class="catalog__image" src="./img/photo-3-mobile.jpg" srcst="./img/photo-3-mobile@2x.jpg 2x"
+                  <img class="catalog__image" src="./img/photo-3-mobile.jpg" srcset="./img/photo-3-mobile@2x.jpg 2x"
                     width="260" height="195" alt="Большая вязаная корзинка">
                 </picture>
               </a>
@@ -135,7 +135,7 @@
               <p class="catalog__description">Диаметр 30 см, высота 30 см</p>
               <div class="catalog__price-cart">
                 <b class="catalog__price">1 500 руб.</b>
-                <button class="catalog__to-cart" type="button" aria-label="Добавить в корзину.">
+                <button class="catalog__to-cart modal-toggle" type="button" aria-label="Добавить в корзину.">
                   <svg class="catalog__icon" width="21" height="18" fill="currentColor">
                     <use xlink:href="./img/sprite.svg#icon-cart"></use>
                   </svg>
@@ -166,7 +166,7 @@
 
     <footer class="footer">
       <div class="footer__logo">
-        <a class="footer__logo-link" href="#">
+        <a class="footer__logo-link" href="index.html">
           <svg class="footer__logo-image" width="102" height="35" fill="currentColor">
             <use xlink:href="./img/sprite.svg#footer-logo"></use>
           </svg>
@@ -213,27 +213,30 @@
     </footer>
   </div>
 
-  <div class="modal-container modal-container--closed">
+  <div class="modal-container modal-container--closed modal-container--nojs">
     <div class="modal">
       <section class="modal__section">
-        <h2 class="modal__title title">Добавить<br>в корзину</h2>
+        <h2 class="modal__title title">Добавить в корзину</h2>
         <form class="modal__form modal-form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="modal-form__group">
             <legend class="modal-form__title">Выберите размер:</legend>
             <ul class="modal-form__list">
-              <li class="modal-form__item modal-form__item--active">
-                <label class="modal-form__label">s
-                  <input class="modal-form__input visually-hidden" type="radio" name="size" value="s">
+              <li class="modal-form__item">
+                <label class="modal-form__label">
+                  <input class="modal-form__input visually-hidden" type="radio" name="size" value="s" checked>
+                  <span class="modal-form__mark">s</span>
                 </label>
               </li>
               <li class="modal-form__item">
-                <label class="modal-form__label">m
+                <label class="modal-form__label">
                   <input class="modal-form__input visually-hidden" type="radio" name="size" value="m">
+                  <span class="modal-form__mark">m</span>
                 </label>
               </li>
               <li class="modal-form__item">
-                <label class="modal-form__label">l
+                <label class="modal-form__label">
                   <input class="modal-form__input visually-hidden" type="radio" name="size" value="l">
+                  <span class="modal-form__mark">l</span>
                 </label>
               </li>
             </ul>
