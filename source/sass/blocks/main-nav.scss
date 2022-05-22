@@ -8,6 +8,8 @@
   }
 }
 
+// For enabled JS ==>
+
 .main-nav--hidden .site-list,
 .main-nav--hidden .user-list {
   @media (max-width: $mobile-width-only) {
@@ -18,6 +20,35 @@
 .main-nav--visible {
   display: flex;
   align-items: center;
+}
+
+// For disabled JS ==>
+
+.main-nav--nojs {
+  @media (max-width: $mobile-width-only) {
+    flex-direction: column;
+  }
+}
+
+.main-nav--nojs .site-list,
+.main-nav--nojs .user-list {
+  @media (max-width: $mobile-width-only) {
+    position: static;
+    display: block;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.main-nav--nojs .main-nav__logo {
+  @media (max-width: $mobile-width-only) {
+    padding: 19px 0;
+    margin: 0 auto;
+  }
 }
 
 .main-nav__logo {
