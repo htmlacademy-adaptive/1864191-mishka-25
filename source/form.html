@@ -10,6 +10,10 @@
   <link rel="icon" type="image/svg+xml" href="./img/favicons/favicon-svg.svg"> <!-- 32×32 -->
   <link rel="apple-touch-icon" href="./img/favicons/apple-icon-180x180.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="./fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/opensans.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/opensansbold.woff" type="font/woff" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page-body">
@@ -72,13 +76,13 @@
 
       <form class="main-form__filter filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="filter__group filter__group--type">
-          <h3 class="filter__title filter__title--type subtitle--green">Тип</h3>
+          <h3 class="filter__title filter__title--type filter__title--green">Тип</h3>
           <ul class="filter__list filter__list--radio">
             <li class="filter__item filter__item--type">
               <label class="filter__label filter__label--radio">
                 <input class="filter__input filter__input--radio visually-hidden" type="radio" name="product-type"
                   value="accessory" checked>
-                <span class="filter__mark filter__mark--radio filter__mark--radio-first"  ></span>
+                <span class="filter__mark filter__mark--radio filter__mark--radio-first"></span>
                 Аксессуар для интерьера
               </label>
             </li>
@@ -94,52 +98,48 @@
         </fieldset>
 
         <fieldset class="filter__group filter__group--color">
-          <h3 class="filter__title filter__title--color subtitle--green">Цвет</h3>
+          <h3 class="filter__title filter__title--color filter__title--green">Цвет</h3>
           <ul class="filter__list filter__list--checkbox">
             <li class="filter__item filter__item--color">
               <label class="filter__label filter__label--checkbox">
-                <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox"
-                  name="white" checked>
+                <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="white"
+                  checked>
                 <span class="filter__mark filter__mark--checkbox"></span>
                 Белый
               </label>
             </li>
             <li class="filter__item filter__item--color">
               <label class="filter__label filter__label--checkbox">
-                <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox"
-                  name="gray" checked>
+                <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="gray"
+                  checked>
                 <span class="filter__mark filter__mark--checkbox"></span>
                 Серый
               </label>
             </li>
             <li class="filter__item filter__item--color">
               <label class="filter__label filter__label--checkbox">
-                <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox"
-                  name="tiffany">
+                <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="tiffany">
                 <span class="filter__mark filter__mark--checkbox"></span>
                 Тиффани
               </label>
             </li>
             <li class="filter__item filter__item--color">
               <label class="filter__label filter__label--checkbox">
-                <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox"
-                  name="black">
+                <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="black">
                 <span class="filter__mark filter__mark--checkbox"></span>
                 Черный
               </label>
             </li>
             <li class="filter__item filter__item--color">
               <label class="filter__label filter__label--checkbox">
-                <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox"
-                  name="pink">
+                <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="pink">
                 <span class="filter__mark filter__mark--checkbox"></span>
                 Розовый
               </label>
             </li>
             <li class="filter__item filter__item--color">
               <label class="filter__label filter__label--checkbox">
-                <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox"
-                  name="orange">
+                <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="orange">
                 <span class="filter__mark filter__mark--checkbox"></span>
                 Оранжевый
               </label>
@@ -148,7 +148,7 @@
         </fieldset>
 
         <fieldset class="filter__group filter__group--name">
-          <h3 class="filter__title filter__title--name subtitle--green">ФИО</h3>
+          <h3 class="filter__title filter__title--name filter__title--green">ФИО</h3>
           <ul class="filter__list filter__list--name">
             <li class="filter__item filter__item--name">
               <label class="filter__label filter__label--name">Имя:
@@ -172,23 +172,28 @@
         </fieldset>
 
         <fieldset class="filter__group filter__group--phone">
-          <h3 class="filter__title filter__title--phone subtitle--green">Тел</h3>
-          <input class="filter__input filter__input-phone" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
-            required>
-          <svg class="filter__icon filter__icon--phone" width="25" height="24" fill="currentColor">
-            <use xlink:href="./img/sprite.svg#icon-phone"></use>
-          </svg>
+          <h3 class="filter__title filter__title--phone filter__title--green">Тел</h3>
+          <label>
+            <input class="filter__input filter__input-phone" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
+              required>
+            <svg class="filter__icon filter__icon--phone" width="25" height="24" fill="currentColor">
+              <use xlink:href="./img/sprite.svg#icon-phone"></use>
+            </svg>
+          </label>
         </fieldset>
         <fieldset class="filter__group filter__group--email">
-          <h3 class="filter__title filter__title--email subtitle--green">E-mail</h3>
-          <input class="filter__input filter__input-email" type="email" name="email" placeholder="Ваш Email*" required>
-          <svg class="filter__icon filter__icon--email" width="32" height="21" fill="currentColor">
-            <use xlink:href="./img/sprite.svg#icon-email"></use>
-          </svg>
+          <h3 class="filter__title filter__title--email filter__title--green">E-mail</h3>
+          <label>
+            <input class="filter__input filter__input-email" type="email" name="email" placeholder="Ваш Email*"
+              required>
+            <svg class="filter__icon filter__icon--email" width="32" height="21" fill="currentColor">
+              <use xlink:href="./img/sprite.svg#icon-email"></use>
+            </svg>
+          </label>
         </fieldset>
 
         <fieldset class="filter__group filter__group--comments">
-          <h3 class="filter__title filter__title--comments subtitle--green">Доп</h3>
+          <h3 class="filter__title filter__title--comments filter__title--green">Доп</h3>
           <textarea class="filter__input filter__input--textarea" name="comment" wrap="soft"
             placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
