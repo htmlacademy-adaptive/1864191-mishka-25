@@ -5,10 +5,11 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 50px;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 38px 250px 32px 225px;
+    padding: 38px 250px 6px 225px;
   }
 }
 
