@@ -171,6 +171,7 @@
 .intro__icon {
   fill: $color-intro-icon;
   padding-top: 4px;
+  flex-shrink: 0;
 
   .intro__item:hover & {
     fill: $color-intro-icon-hov;

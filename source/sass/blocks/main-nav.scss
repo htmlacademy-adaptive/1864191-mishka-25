@@ -62,13 +62,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-right: 209px;
+    margin-right: auto;
     padding-left: 48px;
     padding-top: 6px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 101px;
     padding: 0;
     padding-top: 6px;
   }
@@ -166,8 +165,10 @@
 .main-nav__text {
   display: block;
   margin: 0;
+  max-width: 231px;
   background-color: $color-bg-header;
   border-top: 1px solid $color-nav-border;
+  align-self: start;
 
   @media (max-width: $mobile-width-only) {
     display: none;
