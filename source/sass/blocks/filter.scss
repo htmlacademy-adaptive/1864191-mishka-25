@@ -371,7 +371,6 @@
 }
 
 .filter__input {
-  width: 257px;
   height: 47px;
   display: block;
   font-family: "Open sans", sans-serif;
@@ -407,6 +406,7 @@
 
   &:focus-visible {
     outline: none;
+    border-color: $color-email-underline;
   }
 
   &:active {
@@ -415,6 +415,8 @@
 }
 
 .filter__input-name {
+  width: 257px;
+
   @media (min-width: $tablet-width) {
     width: 100%;
     font-size: 19px;
@@ -426,6 +428,8 @@
 }
 
 .filter__input-phone {
+  width: 257px;
+
   @media (min-width: $tablet-width) {
     width: 480px;
     font-size: 19px;
@@ -442,6 +446,8 @@
 }
 
 .filter__input-email {
+  width: 257px;
+
   @media (min-width: $tablet-width) {
     width: 480px;
     font-size: 19px;

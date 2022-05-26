@@ -15,11 +15,16 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 390px;
+    align-items: center;
     order: 0;
+    margin-right: 18px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 0;
+    max-width: 380px;
+    margin-right: 21px;
     order: 1;
   }
 }
