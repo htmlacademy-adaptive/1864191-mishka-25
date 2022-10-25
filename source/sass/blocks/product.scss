@@ -19,20 +19,20 @@
       position: absolute;
       bottom: 28px;
       left: 0;
-      content: url("../../img/zigzag-line-mobile.svg");
+      content: url("../img/zigzag-line-mobile.svg");
     }
 
     @media (min-width: $tablet-width) {
       position: absolute;
       bottom: -70px;
-      content: url("../../img/zigzag-line-tablet.svg");
+      content: url("../img/zigzag-line-tablet.svg");
     }
 
     @media (min-width: $desktop-width) {
       position: absolute;
       bottom: -96px;
       left: 50px;
-      content: url("../../img/zigzag-line-desktop.svg");
+      content: url("../img/zigzag-line-desktop.svg");
     }
   }
 }

@@ -355,7 +355,7 @@
 }
 
 .filter__input--radio:checked + .filter__mark--radio {
-  background: url("../../img/mark-radio.svg") 50% 50% no-repeat;
+  background: url("../img/mark-radio.svg") 50% 50% no-repeat;
 
   @media (max-width: $mobile-width-only) {
     background-size: 50%;
@@ -363,7 +363,7 @@
 }
 
 .filter__input--checkbox:checked + .filter__mark--checkbox {
-  background: url("../../img/mark-checkbox.svg") center no-repeat;
+  background: url("../img/mark-checkbox.svg") center no-repeat;
 
   @media (max-width: $mobile-width-only) {
     background-size: 73%;
