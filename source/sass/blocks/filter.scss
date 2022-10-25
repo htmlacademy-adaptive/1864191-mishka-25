@@ -387,6 +387,7 @@
     border: 2px solid $color-text-light;
     box-sizing: border-box;
     margin-bottom: 18px;
+    resize: none;
 
     @media (min-width: $tablet-width) {
       width: 100%;
